@@ -3,7 +3,7 @@
             Shivanshu  
          Ai21btech11027
 
-This is my submission for Assignment of AI1110(Probability and Random Variables) for my second semester at IITH.
+This is my submission for Assignment of AI1110(Probability and Random Variables) for my second semester at IIT Hyderabad.
 
 Contents:-
 1. C code for problem
