@@ -1,13 +1,13 @@
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[12pt]{IEEEtran}
 
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
 \title{\textbf{Assignment-1}\\ \large AI1110: Probability And Random Variables\\ IIT Hyderabad}
 \author{Shivanshu  Ai21btech11027\\ March 30,2022}
 
-
 \begin{document}
- \maketitle
+\maketitle
  % The Question
  \textbf{Q7(b)\hspace{1mm} The model of a building is constructed with the scale factor 1:30.}\\
 
@@ -20,31 +20,31 @@
  \textbf{(i)}
  Given height of model building = 80cm\\
  Also the given scale factor is 1:30\\
-
- \rightarrow $1 : 30 = Model height : Actual height $\\
- \rightarrow $Actual height = Model height\times 30 $\\
- \rightarrow $Actual height = 80 \times 30 = 2400 cm.$\\
- 
+\begin{align}
+ \rightarrow 1 : 30 = \textit{Model height : Actual height} \\
+ \rightarrow \textit{Actual height} = \textit{Model height}\times 30 \\
+ \rightarrow \textit{Actual height} = 80 \times 30 = 2400 cm.
+\end{align}
  \textbf{(ii)}
  Actual volume of $tank = 27m^2 $\\
  and given  scale factor is $ 1:30 $\\
 
+\begin{align}
+ \frac{1}{30} = \frac{\textit{Model height}}{\textit{Actual height}}\\
+ \frac{1}{30} = \frac{\textit{Model width}}{\textit{Actual width}}\\
+ \frac{1}{30} = \frac{\textit{Model length}}{\textit{Actual length}}
+\end{align}
 
- $\frac{1}{30} = \frac{\textit{Model height}}{\textit{Actual height}} $\\
-
- $\frac{1}{30} = \frac{\textit{Model width}}{\textit{Actual width}} $\\
-
- $\frac{1}{30} = \frac{\textit{Model length}}{\textit{Actual length}} $\\
-
-
- As we know that volume = $length\times width\times height$\\
- So, \\
- $\frac{1}{30*30*30} = \frac{\textit{Model volume}}{\textit{Actual volume}} $\\
-
-
- volume = $\frac{\textit{Actual volume}}{27000} $\\
- 
- Model volume = $\frac{27}{27000} = 0.001m^2$\\
+ As we know that,
+ \begin{align}
+ volume = length\times width\times height
+ \end{align}
+ So,
+ \begin{align}
+ \frac{1}{30\times30\times30} &= \frac{\textit{Model volume}}{\textit{Actual volume}} \\
+ \textit{Model volume} &= \frac{\textit{Actual volume}}{27000} \\
+ \textit{Model volume} &= \frac{27}{27000} = 0.001m^2
+ \end{align}
  on converting it into centimeter square = $0.001 \times 10^6$\\
  volume of model tank $= 1000 cm^2$\\
 \end{document}
