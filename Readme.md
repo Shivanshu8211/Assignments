@@ -1,4 +1,6 @@
-# assignment-1
+# assignments
+  AI1100 Probability And Random Variable
+
             Shivanshu  
          Ai21btech11027
 
