@@ -1,4 +1,4 @@
-# assignments
+# Assignments
   AI1100 : Probability And Random Variable
 
             Shivanshu  
