@@ -36,11 +36,21 @@
         \right.
     \end{equation}
     
+    % Figure
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\columnwidth]{Graph.png}
+        \caption{Graph of $f(x) = |x+3|$}
+        \label{fig.}
+    \end{figure}
+    
+    
      % Box for the identity
     \begin{tcolorbox}
         using the property\\
         \int_{a}^{b} x \,dx = \int_{a}^{c} x \,dx  +  \int_{c}^{b} x \,dx
     \end{tcolorbox}
+    
     
     % Starting of proof
     \begin{align}
@@ -50,17 +60,17 @@
         &= -\left[\frac{x^2}{2}+3x\right]_{-6}^{-3} + \left[\frac{x^2}{2}+3x\right]_{-3}^{3}\\
         &=-\left[\frac{(-3)^2-(-6)^2}{2}+3(-3-(-6))\right]
     \end{align}
-    $+\left[\frac{(3)^2-(-3)^2}{2} +3(3-(-6))\right]$\\
+    $+\left[\frac{(3)^2-(-3)^2}{2} +3(3-(-6))\right]$
     \begin{align}
         &=-\left[\frac{(9)-(36)}{2} +3(3))\right]
     \end{align}
-    $+\left[\frac{(9)-(9)}{2} +3(3))\right]$\\
+    $+\left[\frac{(9)-(9)}{2} +3(3))\right]$
     \begin{align}
         &=\frac{27}{2}-9+0+18\\
         &=\frac{27}{2}+9\\
         &=\frac{45}{2}\\
-        &=22\frac{1}{2}\\
+        &=22\frac{1}{2}
     \end{align}
     \implies $ \int_{-6}^{3} |x+3| \,dx $ = $22\frac{1}{2}$ unit.\\
-
+    
 \end{document}
