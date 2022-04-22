@@ -1,0 +1,13 @@
+% Table 1
+
+\begin{tabular}{|c|c|}
+        \hline
+        Age(in years) & Number of children \\ \hline
+        1-2        & 5                \\ 
+        2-3        & 3                \\ 
+        3-5        & 6                \\ 
+        5-7        & 12               \\ 
+        7-10       & 9                \\ 
+        10-15      & 10               \\ 
+        15-17      & 4                \\ \hline
+\end{tabular}
