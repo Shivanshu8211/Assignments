@@ -1,0 +1,50 @@
+\documentclass[12pt]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+
+\title{\textbf{Assignment-3}\\ \large AI1110: Probability And Random Variables\\ IIT Hyderabad}
+\author{Shivanshu  Ai21btech11027\\ April 18,2022}
+
+\begin{document}
+    \maketitle
+    \textbf{Q-8 A random survey of the number of children of various age group playing in a park was found as follows:-}\\
+   
+    % Table given in question
+    \begin{center}
+        \input{Table/Table_1}
+    \end{center}
+    \textbf{Draw a histogram to represent the above data.}\\
+    
+    % Solution
+    \textbf{Solution:-}\\
+    Here, the has class intervals of varying width.\\
+    So, we will calculate adjusted frequency\\
+
+    \begin{align}
+        \textit{Adjusted Frequency} &= \tfrac{ \text{Frequency} \times \text{Required size of interval}}{\text{Current size of interval}}\\
+        \text{Required size of interval} &= \text{Minimum size of interval}\\
+        \text{Minimum size of interval} &= 2-1 =1
+    \end{align}\\
+    
+    
+    \begin{center}
+        \input{Table/Table_2}
+    \end{center}
+    
+    % Adjusted frequency table
+    \begin{center}
+        \input{Table/Table_3}
+        \label{table:table_3}
+    \end{center}
+    
+    % Figure (Required Histogram)
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\columnwidth]{Graph3.png}
+        \caption{Histogram showing age data of children}
+        \label{fig.}
+    \end{figure}
+    
+\end{document}
