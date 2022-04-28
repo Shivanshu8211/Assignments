@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import openpyxl
 
 # Accesing tables
-wb1=openpyxl.load_workbook("C:\\Users\\arisa\\Documents\\Book1.xlsx")
-wb2=openpyxl.load_workbook("C:\\Users\\arisa\\Documents\\Book2.xlsx")
-wb3=openpyxl.load_workbook("C:\\Users\\arisa\\Documents\\Book3.xlsx")
+wb1=openpyxl.load_workbook("Tables\\Table_1.xlsx")
+wb2=openpyxl.load_workbook("Tables\\Table_2.xlsx")
+wb3=openpyxl.load_workbook("Tables\\Table_3.xlsx")
 sh1=wb1['Sheet1']
 sh2=wb2['Sheet1']
 sh3=wb3['Sheet1']
@@ -50,7 +50,7 @@ for i in range(2,row+1):
     sh2.cell(row=i,column=2,value=freq[i-2])
 for i in range(2,row+1):
     sh2.cell(row=i,column=4,value=adjusted_freq[i-2])
-wb2.save("C:\\Users\\arisa\\Documents\\Book2.xlsx")
+wb2.save("Tables\\Table_2.xlsx")
 
 # Creating required list 'a' for plotting histogram  
 a=[]
@@ -61,7 +61,7 @@ for i in range(len(adjusted_freq)):
 # Writing data in Table_3.xlsx
 for i in range(2,row+1):
     sh3.cell(row=i,column=2,value=adjusted_freq[i-2])
-wb3.save("C:\\Users\\arisa\\Documents\\Book3.xlsx")
+wb3.save("Tables\\Table_3.xlsx")
 
 # Lables
 plt.xlabel('No. of childrens')
