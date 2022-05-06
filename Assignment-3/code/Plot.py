@@ -1,13 +1,9 @@
 import matplotlib.pyplot as plt
-import openpyxl
+import pandas as pd
+import numpy as np
 
 # Accesing tables
-wb1=openpyxl.load_workbook("Tables\\Table_1.xlsx")
-wb2=openpyxl.load_workbook("Tables\\Table_2.xlsx")
-wb3=openpyxl.load_workbook("Tables\\Table_3.xlsx")
-sh1=wb1['Sheet1']
-sh2=wb2['Sheet1']
-sh3=wb3['Sheet1']
+read_tab1 = pd.read_excel("Tables\\Table_1.xlsx")
 
 # Data from question
 """  __________________________________________
@@ -21,18 +17,12 @@ sh3=wb3['Sheet1']
            15-17        |         4
      ___________________|_______________________
 """
-row=sh1.max_row
 
 # Reading data from table 1 given in quetion from Table_1.xlsx
-l_val=[]
-for i in range(2,row+1):
-    l_val.append(int(sh1.cell(i,1).value))
-r_val=[]
-for i in range(2,row+1):
-    r_val.append(int(sh1.cell(i,2).value))
-freq=[]
-for i in range(2,row+1):
-    freq.append(int(sh1.cell(i,4).value))
+l_val = read_tab1["L_Age"]
+r_val = read_tab1["U_Age"]
+freq = read_tab1["Number of children"]
+class_interval = ["{}-{}".format(l_val[i],r_val[i])for i in range(7)]
     
 """
 Adjusted Frequency =(Frequency×Required size of interval)/Current size of interval
@@ -41,27 +31,19 @@ Required size of interval = minimum size of interval
 
 # Calculating Adjusted frequency
 adjusted_freq = []
-minimum_interval = min(r_val)-min(l_val)
+minimum_interval = min(r_val) - min(l_val)
 for i in range(len(freq)):
     adjusted_freq.append((freq[i]*minimum_interval)//(r_val[i]-l_val[i]))
-    
-# Writing data in Table_2.xlsx    
-for i in range(2,row+1):
-    sh2.cell(row=i,column=2,value=freq[i-2])
-for i in range(2,row+1):
-    sh2.cell(row=i,column=4,value=adjusted_freq[i-2])
-wb2.save("Tables\\Table_2.xlsx")
 
 # Creating required list 'a' for plotting histogram  
 a=[]
 for i in range(len(adjusted_freq)):
     for j in range(adjusted_freq[i]):
         a.append((l_val[i]+r_val[i])/2)
-        
-# Writing data in Table_3.xlsx
-for i in range(2,row+1):
-    sh3.cell(row=i,column=2,value=adjusted_freq[i-2])
-wb3.save("Tables\\Table_3.xlsx")
+
+# writing data in table 2
+write = pd.DataFrame({"Age(in years)":class_interval,"Adjusted fequency":adjusted_freq})
+write.to_excel("Tables\\Table_2.xlsx",index=False)
 
 # Lables
 plt.xlabel('No. of childrens')
