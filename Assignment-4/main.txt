@@ -20,68 +20,68 @@
     
         \textbf{(i)} Given:
         \begin{align}
-        E=\{1,3,5\} \hspace{2mm}P(E) = \dfrac{3}{6} = \dfrac{1}{2}\\
-        F=\{2,3\} \hspace{2mm}P(F) = \dfrac{2}{6} = \dfrac{1}{3} \\
-        G=\{2,3,4,5\} \hspace{2mm}P(G) = \dfrac{4}{6} = \dfrac{2}{3} \\
-        \implies EF = \{3\} \\
-        \implies P(EF) = \dfrac{1}{6}
+            E=\{1,3,5\} \hspace{2mm}P(E) = \dfrac{3}{6} = \dfrac{1}{2}\\
+            F=\{2,3\} \hspace{2mm}P(F) = \dfrac{2}{6} = \dfrac{1}{3} \\
+            G=\{2,3,4,5\} \hspace{2mm}P(G) = \dfrac{4}{6} = \dfrac{2}{3} \\
+            \implies EF = \{3\} \\
+            \implies P(EF) = \dfrac{1}{6}
         \end{align}
         Now,
         \begin{align}
-        P(E / F) &= \dfrac{P(EF)}{P(F)} \\
-        &= \dfrac{1}{6}\times\dfrac{3}{1} \\
-        &= \dfrac{1}{2}
+            P(E / F) &= \dfrac{P(EF)}{P(F)} \\
+            &= \dfrac{1}{6}\times\dfrac{3}{1} \\
+            &= \dfrac{1}{2}
         \end{align}
     
         And
         \begin{align}
-        P(F / E) &= \dfrac{P(FE)}{P(E)} \\
-        &= \dfrac{P(EF)}{P(E)} \\
-        &= \dfrac{1}{6}\times\dfrac{2}{1}\\
-        &= \dfrac{1}{3} \\
-        \textbf{(ii)} \hspace{3mm} EG = \{3,5\} \\
-        \implies P(EG) = \dfrac{1}{3}
+            P(F / E) &= \dfrac{P(FE)}{P(E)} \\
+            &= \dfrac{P(EF)}{P(E)} \\
+            &= \dfrac{1}{6}\times\dfrac{2}{1}\\
+            &= \dfrac{1}{3} \\
+            \textbf{(ii)} \hspace{3mm} EG = \{3,5\} \\
+            \implies P(EG) = \dfrac{1}{3}
         \end{align}
         Now,
         \begin{align}
-        P(E / G) &= \dfrac{P(EG)}{P(G)} \\
-        &= \dfrac{1}{3}\times\dfrac{3}{2} \\
-        &= \dfrac{1}{2}
+            P(E / G) &= \dfrac{P(EG)}{P(G)} \\
+            &= \dfrac{1}{3}\times\dfrac{3}{2} \\
+            &= \dfrac{1}{2}
         \end{align}
         And
         \begin{align}
-        P(G / E) = \dfrac{P(GE)}{P(E)} \\
-        &= \dfrac{P(EG)}{P(E)} \\
-        &= \dfrac{1}{3}\times\dfrac{2}{1} \\
-        &= \dfrac{2}{3} \\
-        \textbf{(iii)} \hspace{3mm}Let\hspace{3mm} E+F = A
+            P(G / E) = \dfrac{P(GE)}{P(E)} \\
+            &= \dfrac{P(EG)}{P(E)} \\
+            &= \dfrac{1}{3}\times\dfrac{2}{1} \\
+            &= \dfrac{2}{3} \\
+            \textbf{(iii)} \hspace{3mm}Let\hspace{3mm} E+F = A
         \end{align}
         So,
         \begin{align}
-        A = \{1,2,3,5\} \\
-        P(A) = \dfrac{4}{6} \\
-        \implies AG = \{2,3,5\}
+            A = \{1,2,3,5\} \\
+            P(A) = \dfrac{4}{6} \\
+            \implies AG = \{2,3,5\}
         \end{align}
         So,
         \begin{align}
-        P(AG) = \dfrac{3}{6} \\
-        P(A/G) = \dfrac{P(AG)}{P(G)} \\
-        \implies P((E+F)/G) = \dfrac{3}{4}
+            P(AG) = \dfrac{3}{6} \\
+            P(A/G) = \dfrac{P(AG)}{P(G)} \\
+            \implies P((E+F)/G) = \dfrac{3}{4}
         \end{align}
         And \\
         Let \hspace{5mm}
         \begin{align}
-        EF = B
+            EF = B
         \end{align}
         So,
         \begin{align}
-        B &= \{3\} \\
-        P(B) &= \dfrac{1}{6} \\
-        \implies BG &= \{3\} \\
-        So, P(BG) &= \dfrac{1}{6} \\
-        P(B/G) &= \dfrac{P(BG)}{P(G)} \\
-        &=\dfrac{1}{4}\\
-        \implies P((EF)/G) &= \dfrac{1}{4}
+            B &= \{3\} \\
+            P(B) &= \dfrac{1}{6} \\
+            \implies BG &= \{3\} \\
+            So, P(BG) &= \dfrac{1}{6} \\
+            P(B/G) &= \dfrac{P(BG)}{P(G)} \\
+            &=\dfrac{1}{4}\\
+            \implies P((EF)/G) &= \dfrac{1}{4}
         \end{align}
         
 \end{document} 
