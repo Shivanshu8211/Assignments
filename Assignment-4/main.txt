@@ -14,7 +14,7 @@
     F=\{2,3\} and G = \{2,3,4,5\}. Find\\
     (i) $ P(E/F) and P(F/E) $ \\
     (ii) $ P(E/G) and P(G/E) $ \\
-    (iii) $ P((E\cup F)/G) and P((E\cap F)/ G) $ \\
+    (iii) $ P((E+F)/G) and P((EF)/ G) $ \\
     
     \textbf{Solution}:- \\
     
@@ -23,65 +23,65 @@
         E=\{1,3,5\} \hspace{2mm}P(E) = \dfrac{3}{6} = \dfrac{1}{2}\\
         F=\{2,3\} \hspace{2mm}P(F) = \dfrac{2}{6} = \dfrac{1}{3} \\
         G=\{2,3,4,5\} \hspace{2mm}P(G) = \dfrac{4}{6} = \dfrac{2}{3} \\
-        \implies E \cap F = \{3\} \\
-        \implies P(E \cap F) = \dfrac{1}{6}
+        \implies EF = \{3\} \\
+        \implies P(EF) = \dfrac{1}{6}
         \end{align}
         Now,
         \begin{align}
-        P(E / F) &= \dfrac{P(E \cap F)}{P(F)} \\
+        P(E / F) &= \dfrac{P(EF)}{P(F)} \\
         &= \dfrac{1}{6}\times\dfrac{3}{1} \\
         &= \dfrac{1}{2}
         \end{align}
     
         And
         \begin{align}
-        P(F / E) &= \dfrac{P(F \cap E)}{P(E)} \\
-        &= \dfrac{P(E \cap F)}{P(E)} \\
+        P(F / E) &= \dfrac{P(FE)}{P(E)} \\
+        &= \dfrac{P(EF)}{P(E)} \\
         &= \dfrac{1}{6}\times\dfrac{2}{1}\\
         &= \dfrac{1}{3} \\
-        \textbf{(ii)} \hspace{3mm} E \cap G = \{3,5\} \\
-        \implies P(E \cap G) = \dfrac{1}{3}
+        \textbf{(ii)} \hspace{3mm} EG = \{3,5\} \\
+        \implies P(EG) = \dfrac{1}{3}
         \end{align}
         Now,
         \begin{align}
-        P(E / G) &= \dfrac{P(E \cap G)}{P(G)} \\
+        P(E / G) &= \dfrac{P(EG)}{P(G)} \\
         &= \dfrac{1}{3}\times\dfrac{3}{2} \\
         &= \dfrac{1}{2}
         \end{align}
         And
         \begin{align}
-        P(G / E) = \dfrac{P(G \cap E)}{P(E)} \\
-        &= \dfrac{P(E \cap G)}{P(E)} \\
+        P(G / E) = \dfrac{P(GE)}{P(E)} \\
+        &= \dfrac{P(EG)}{P(E)} \\
         &= \dfrac{1}{3}\times\dfrac{2}{1} \\
         &= \dfrac{2}{3} \\
-        \textbf{(iii)} \hspace{3mm}Let E\cup F = A
+        \textbf{(iii)} \hspace{3mm}Let\hspace{3mm} E+F = A
         \end{align}
         So,
         \begin{align}
         A = \{1,2,3,5\} \\
         P(A) = \dfrac{4}{6} \\
-        \implies A\cap G = \{2,3,5\}
+        \implies AG = \{2,3,5\}
         \end{align}
         So,
         \begin{align}
-        P(A\cap G) = \dfrac{3}{6} \\
-        P(A/G) = \dfrac{P(A\cap G)}{P(G)} \\
-        \implies P((E\cup F)/G) = \dfrac{3}{4}
+        P(AG) = \dfrac{3}{6} \\
+        P(A/G) = \dfrac{P(AG)}{P(G)} \\
+        \implies P((E+F)/G) = \dfrac{3}{4}
         \end{align}
         And \\
         Let \hspace{5mm}
         \begin{align}
-        E\cap F = B
+        EF = B
         \end{align}
         So,
         \begin{align}
         B &= \{3\} \\
         P(B) &= \dfrac{1}{6} \\
-        \implies B\cap G &= \{3\} \\
-        So, P(B\cap G) &= \dfrac{1}{6} \\
-        P(B/G) &= \dfrac{P(B\cap G)}{P(G)} \\
+        \implies BG &= \{3\} \\
+        So, P(BG) &= \dfrac{1}{6} \\
+        P(B/G) &= \dfrac{P(BG)}{P(G)} \\
         &=\dfrac{1}{4}\\
-        \implies P((E\cap F)/G) &= \dfrac{1}{4}
+        \implies P((EF)/G) &= \dfrac{1}{4}
         \end{align}
         
 \end{document} 
