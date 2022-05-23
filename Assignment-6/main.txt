@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass[15pt]{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment-6} 
+\author{Shivanshu  Ai21btech11027}
+\date{May 22, 2022}
+
+
+\begin{document}
+    \maketitle
+    
+    \begin{frame}{Question}
+        \textbf{papoulis book exercise 4}\\
+        \large \noindent Q-4 The random variable is x in $N(\eta,\sigma)$ and $P\{\eta-k\sigma \leq x \leq \eta+k\sigma\} = p_k.$\\
+        (a) Find $p_k$ for $k = 1, 2$ and 3.\\
+        (b) Find k for $p_k = 0.9$, 0.99 and 0.999.\\
+        (c) If $P\{\eta-z_\mu\sigma \leq x \leq \eta+z_\mu\sigma\} = \gamma$, express $z_\mu$ in terms of $\gamma$.\\
+    \end{frame}
+    \begin{frame}{Solution}
+    $p_k - 2G(k) = 1 = 2erfk$
+    
+    (a) From Table 4-1
+        \begin{table}[ht!]
+            \centering
+            \input{Table/Table_4}
+            \vspace{3pt}
+            \label{table:table 1}
+        \end{table}
+        
+    (b) From Table 3-1 with linear interpolation:
+        \begin{table}[ht!]
+            \centering
+            \input{Table/Table_5}
+            \vspace{3pt}
+            \label{table:table 2}
+        \end{table}
+    \end{frame}
+    
+    \begin{frame}
+    (c) $P\{\eta-z_\mu\sigma \leq x \leq \eta+z_\mu\sigma\} = 2G(z_\mu) - 1 = \gamma$ \\
+    \vspace{5mm}
+    Hence, \hspace{5mm} $G(z_\mu) = (1 + \gamma)/2$ \hspace{5mm} $\mu = (1 + \gamma)/2$
+    \end{frame}
+       
+        
+\end{document}
