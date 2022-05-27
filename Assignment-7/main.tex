@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass[15pt]{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment-7} 
+\author{Shivanshu  Ai21btech11027}
+\date{May 25, 2022}
+
+
+\begin{document}
+    \maketitle
+    
+    \begin{frame}{Question}
+        \textbf{Papoulis book exercise 5}\\
+        \large \noindent Q-15 A fair coin is tossed 10 times and x equals the number of heads.
+        
+        (a) Find $F_x(x)$.
+        
+        (b) Find $F_y(y)$ if $y = (x-3)^2$.
+    \end{frame}
+    \begin{frame}{Solution}
+    (a) The random variable x takes the value $k = 0,1,2,.....,10$ and \\
+     \hspace{5mm}$P(x=k) = p_k = {10\choose k}\dfrac{1}{2^{10}}$ \hspace{5mm} $0\leq k \leq 10$
+    
+    $F_x(x)$ is a staircase function with discontinuities at the points $x=k$ and jumps equal to $P_k$.
+    \end{frame}
+    \begin{frame}{Solution}
+    
+    (b) The random variable $y = (x - 3)^3$
+    takes the value $y = k^2$ for $k = 0,1,.....,7$ and probabilities $P\{y = k^2\} = q_K$.
+    \begin{table}[ht!]
+            \centering
+            \input{Table/Table_6}
+            \vspace{3pt}
+    \end{table}
+       
+    \end{frame}   
+\end{document}
