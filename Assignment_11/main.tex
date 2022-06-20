@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass[15pt]{beamer}
+
+
+% Theme choice:
+\usetheme{Warsaw}
+\usecolortheme{rose}
+
+% Title page details: 
+\title{Assignment-11} 
+\author{Shivanshu  Ai21btech11027}
+\date{june 14, 2022}
+\begin{document}
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+    \section{Question}
+    \begin{frame}{Question}
+        \textbf{Papoulis book exercise 11}\\
+        \large \noindent Q-10 Show that if\\
+        \begin{center}
+             $E\{x_n , x_k\} = \sigma^2\delta[n - k] \hspace{5mm} X(\omega) = \sum_{n=-\infty}^\infty x_ne^{-jn\omega T} $
+        \end{center}
+        and $E\{x_n\} = 0$, then $E\{X(\omega)\} = 0$ and \\
+        $E\{X(u)X^*(v)\} = \sum_{n=-\infty}^\infty \sigma^2_n e^{-jn(u-v)T}$
+    \end{frame}
+    \section{Solution}
+    \begin{frame}{Solution}
+        \begin{align}
+            X(u) &= \sum_{n=-\infty}^\infty x_n e^{-jnuT} \\
+            X^*(u) &= \sum_{k=-\infty}^\infty x_k e^{-jkuT} \\
+            X(u)X^*(u) &= \sum_{n=-\infty}^\infty \sum_{k=-\infty}^\infty ( x_n e^{-jnuT} x_k e^{-jkuT} ) \\
+            &= \sum_{n=-\infty}^\infty \sum_{k=-\infty}^\infty (x_n x_k)(e^{-j(nu-kv)T}) \\
+            E(X(u)X^*(u)) &=  \sum_{n=-\infty}^\infty \sum_{k=-\infty}^\infty (e^{-j(nu-kv)T}) E(x_n x_k)
+        \end{align}
+    \end{frame}
+    \begin{frame}{Solution}
+        \begin{align}
+            &= \sum_{n=-\infty}^\infty \sum_{k=-\infty}^\infty \sigma_n^2\delta(n - k) (e^{-j(nu - kv)T}) \\
+            &= \sum_{n=-\infty}^\infty \sigma_n^2 e^{-jn(u - v)T}
+        \end{align}
+    \end{frame}
+\end{document}
