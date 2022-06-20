@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass[15pt]{beamer}
+
+
+% Theme choice:
+\usetheme{Warsaw}
+\usecolortheme{rose}
+
+% Title page details: 
+\title{Assignment-12} 
+\author{Shivanshu  Ai21btech11027}
+\date{june 18, 2022}
+\begin{document}
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+    \section{Question}
+    \begin{frame}{Question}
+        \textbf{Papoulis book exercise 15}\\
+        \large \noindent Q-14  Determine the mean time to absorption for the given genetic models.\\
+        \begin{center}
+             $\lambda_0 = 1 \hspace{5mm}\lambda_1 = 1 \hspace{5mm}\lambda_r = 2^r ({2N-r\choose N-r}/{2N\choose N}) < 1$ \\
+             \vspace{5mm}
+             where r = 2, 3, ..., N
+        \end{center}
+    \end{frame}
+    \section{Solution}
+    \begin{frame}{Solution}
+        From (15-240), the mean time to absorption vector is given by 
+        \begin{align}
+            m = (I - W)^{-1}E ,\hspace{5mm} E = [1,1,...1]^T 
+        \end{align}
+        Where
+        \begin{align}             
+            W_{ik} = p_{jk}, \hspace{5mm} j,k = 1, 2, ...N-1
+        \end{align}
+        with 
+        \begin{align}
+            P_{jk} = {N\choose k} ( \dfrac{j}{N})^k  (1 - \frac{j}{N})^{N-k} \hspace{5mm} j,k = 0, 1, ...., N
+        \end{align} 
+    \end{frame}
+\end{document}
