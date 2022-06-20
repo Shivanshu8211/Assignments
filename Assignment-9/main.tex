@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass[15pt]{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+\usecolortheme{whale}
+
+% Title page details: 
+\title{Assignment-9} 
+\author{Shivanshu  Ai21btech11027}
+\date{june 2, 2022}
+\begin{document}
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+    \section{Question}
+    \begin{frame}{Question}
+        \textbf{Papoulis book exercise 6}\\
+        \large \noindent Q-39 The random variable x and y are independent, x is $N(0,\sigma^2)$. and y is uniform in the interval $(0.\pi)$. Show that if $z = x + a cosy$ , then \\
+        \begin{center}
+             $f_z(z) = \dfrac{1}{\pi\sigma\sqrt{2\pi}}\int_{0}^{\pi} e^{-(z - acosy)^2/2\sigma^2} \,dy$
+        \end{center}
+    \end{frame}
+    \section{Solution}
+    \begin{frame}{Solution}
+        $\underline{z} = \underline{x} + \underline{s} \hspace{5mm} \underline{s} = a cos\underline{y}$
+    \\
+    $f_z(z) = f_x(z) * f_s(z)$
+    \\
+        $f_s(s) =  $
+        \left\{
+        \begin{array}{l}
+            $\dfrac{1}{\pi\sqrt{a^2 - s^2}} \hspace{5mm} |a| < a$\\
+            \vspace{0.01cm} \\
+            0 \hspace{22mm} |a| < a\\
+        \end{array}
+        \right.
+        \\
+         $f_z(z)=\frac{1}{\pi\sigma\sqrt{2\pi}} \int_{-a}^{a} \dfrac{e^{-(z-s)^2/2\sigma^2}}{\sqrt{a^2 - s^2}} \,ds$
+
+        $f_z(z)=\frac{1}{\pi\sigma\sqrt{2\pi}} \int_{-\pi}^{\pi} e^{-(z-a cosy)^2/2\sigma^2}\,dy$
+        
+    \end{frame}
+\end{document}
