@@ -1,13 +1,17 @@
 #Importing numpy, scipy, mpmath and pyplot         
 import numpy as np
+import math
 import matplotlib.pyplot as plt
 
-#if using termux
-import subprocess
-import shlex
-#end if
-
-
+#################################################
+new_pdf = []
+X = np.linspace(-4,4,500)
+for i in X:
+	if i<0:
+		new_pdf.append(0)
+	else:
+		new_pdf.append(1-math.exp(-i/2))
+#################################################
 
 x = np.linspace(-4,4,30)#points on the x axis
 simlen = int(1e6) #number of samples
@@ -21,18 +25,11 @@ for i in range(0,30):
 	err.append(err_n/simlen) #storing the probability values in a list
 
 	
-plt.plot(x.T,err)#plotting the CDF
+plt.plot(x.T,err,"o")#plotting the CDF
+plt.plot(X,new_pdf)
 plt.grid() #creating the grid
 plt.xlabel('$x$')
 plt.ylabel('$F_X(x)$')
+plt.legend(["Numerical","Theory"])
 
-#if using termux
-#plt.savefig('figs/uni_cdf.pdf')
-#plt.savefig('figs/uni_cdf.eps')
-#subprocess.run(shlex.split("termux-open ../figs/uni_cdf.pdf"))
-#if using termux
-#plt.savefig('../figs/gauss_cdf.pdf')
-#plt.savefig('../figs/gauss_cdf.eps')
-#subprocess.run(shlex.split("termux-open ../figs/gauss_cdf.pdf"))
-#else
 plt.show() #opening the plot window
